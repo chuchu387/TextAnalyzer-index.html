@@ -50,8 +50,7 @@ def analyze(request):
                 analyzed = analyzed + char
         params = {"Purposed": "Remove New Lines", "analyzed_text": analyzed}
         return render(request, 'analyze.html', params)
-    # if(djtext != "on" and fullcaps != "on" and newlineremover != "on"):
-    #     return HttpResponse('''Error <br> <a href= "http://127.0.0.1:8000/">Back to Home</a>''')
+
 
 
     elif(charactercounter == 'on'):
@@ -63,15 +62,3 @@ def analyze(request):
     else:
         return HttpResponse('''Error <br> <a href= "http://127.0.0.1:8000/">Back to Home</a>''')
 
-# day3
-# def Capatalizefirst(request):
-#     return HttpResponse('''capfirst <br> <a href= "http://127.0.0.1:8000/">Back to Home</a>''')
-#
-# def newlineremove(request):
-#     return HttpResponse('''newlineremove <br> <a href= "http://127.0.0.1:8000/">Back to Home</a>''')
-#
-# def spaceremove(request):
-#     return HttpResponse('''spaceremove <br> <a href= "http://127.0.0.1:8000/">Back to Home</a>''')
-#
-# def charcount(request):
-#     return HttpResponse('''charcount <br> <a href= "http://127.0.0.1:8000/">Back to Home</a>''')
