@@ -20,25 +20,10 @@ from django.urls import path
 from . import day2
 
 
-# day1:
-# urlpatterns = (
-#     path('admin/', admin.site.urls),
-#     path('', day1.index, name='index'),
-#     path('navigator', day1.navigator, name='navigator'),
-#     path('about', day1.about, name='about')
-# )
-
 urlpatterns = (
     path('admin/', admin.site.urls),
     path('', day2.index, name='index'),
-    # path('', day1.index, name='index'),
-    # path('navigator', day1.navigator, name='navigator'),
     path('analyze', day2.analyze, name='analyze'),
 
-    #day3
-    # path('Capatalizefirst', day2.Capatalizefirst, name='capfirst'),
-    # path('newlineremove', day2.newlineremove, name='newlineremove'),
-    # path('spaceremove', day2.spaceremove, name='spaceremove'),
-    # path('charcount', day2.charcount, name='charcount')
 
 )
